@@ -5,3 +5,7 @@ This repository contains code for a multi layer implementation of the LSTM Recur
 ### Usage:
 
 This code was used in continuation with the other GitHub repository on [Sentiment Analysis](https://github.com/axelnine/Sentiment-Analysis)
+
+### Data:
+
+The data this network was trained on was the Stanford [IMDB Movie Review Dataset](http://ai.stanford.edu/~amaas/data/sentiment/)
