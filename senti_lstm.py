@@ -82,22 +82,22 @@ tb_cb = TensorBoard(log_dir='./Graph', histogram_freq=0,
                             write_graph=True, write_images=True)
 model_history = model.fit(x, y=y, batch_size=128, nb_epoch=1, verbose=1,validation_data = (testx, testy), callbacks = [tb_cb])
 ############################################################################################################################################
-#model.save('Saved_Models_&_Weights/temporary_model_23417.h5')
-#model.save_weights('Saved_Models_&_Weights/temporary_model_weights_23417.h5')
-#model_history = load_model('Saved_Models_&_Weights/temporary_model_200417.h5')
-#model_history.load_weights('Saved_Models_&_Weights/temporary_model_weights_200417.h5')
-#accuracy = model_history.history['acc']
-#loss = model_history.history['loss']#
-#validation_accuracy = model_history.history['val_acc']
-#validation_loss = model_history.history['val_loss']
-#print accuracy
-#print loss
-#print validation_accuracy
-#print validation_loss
-#numpy_accuracy_history = np.array(accuracy)
-#numpy_loss_history = np.array(loss)
-#numpy_val_acc_history = np.array(validation_accuracy)
-#numpy_val_loss_history = np.array(validation_loss)
+model.save('Saved_Models_&_Weights/temporary_model_23417.h5')
+model.save_weights('Saved_Models_&_Weights/temporary_model_weights_23417.h5')
+model_history = load_model('Saved_Models_&_Weights/temporary_model_200417.h5')
+model_history.load_weights('Saved_Models_&_Weights/temporary_model_weights_200417.h5')
+accuracy = model_history.history['acc']
+loss = model_history.history['loss']#
+validation_accuracy = model_history.history['val_acc']
+validation_loss = model_history.history['val_loss']
+print accuracy
+print loss
+print validation_accuracy
+print validation_loss
+numpy_accuracy_history = np.array(accuracy)
+numpy_loss_history = np.array(loss)
+numpy_val_acc_history = np.array(validation_accuracy)
+numpy_val_loss_history = np.array(validation_loss)
 
 ############################################################################################################################################
 #plt.plot(model_history.history['loss'])
